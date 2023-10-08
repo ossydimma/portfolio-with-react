@@ -28,9 +28,6 @@ a {
 
 .navi {
     display: flex;
-    
-   
-
 }
 .navi :nth-child(1) {
     border-left: 1px solid  #575555;
@@ -55,13 +52,16 @@ a {
 #submenu {
     display: none;
 }
+#bar {
+    display: none;
+}
 .container {
     width: 70vw;
     height: 70vh;
     border-radius: 50%;
     background: green;
     margin-top: 80px;
-    padding-left: 10px;
+    padding-left: 120px;
     box-shadow: 50px 1px #fff;
 }
 
@@ -81,4 +81,79 @@ a {
 #header__body  p {
     color: #150303;
     text-shadow: 1px 1px #575555;
+}
+
+@media only screen and (max-width: 992px) {
+    #menu {
+        padding: 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items:first baseline;
+        justify-content: baseline;
+        border-bottom: none;
+    }
+    #menu :nth-child(1) > h2{
+        padding: 20px 0px 0px 20px ;
+    }
+    #menuContent {
+        display: flex;
+        padding-top: 20px;
+        width: 100vw;
+        background: #4c4c4c;
+        margin-top: 5px;
+        transition: all .3s ease-out 0s;   
+        flex-direction: column;
+    }
+    #bar {
+        display: flex;
+        justify-content: right;
+        
+    }
+    #bar > button {
+        background: #150303;
+        width: 100px;
+        height: 35px;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        margin-right: 20px;
+        border-radius: 5px;
+        
+    }
+    .navi {
+        display: none;
+        flex-direction: column;
+        padding-top: 10px;
+        transition: all .3s ease-out ;
+    }
+    .navi > a {
+        font-size: 15px;
+        border-right: 1px solid  #575555;
+        padding: 8px 10px;
+        color: #fff;
+        width: 90%;
+        border-radius: 8px;
+        margin-left: 10px;
+    }
+    .navi > a:hover {
+        background-color: rgba(253, 248, 248, 0.3);
+    }
+    .container {
+        width: 70vw;
+        height:50vh;
+        border-radius: 50%;
+        margin-top: 70px;
+        padding-left: 80px;
+        box-shadow: 20px 1px #fff;
+    }
+    #header__body {
+        font-size: 20px
+    }
+    #header__body  h1 {
+        margin-top: 130px;
+    }
+    #header__body  p{
+        font-size: 17px;
+        font-weight: 600;
+    }
 }
