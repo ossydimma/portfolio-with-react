@@ -63,6 +63,23 @@ const About = () => {
               </div>
             </div>
         </div>
+
+        <div className="expertise">
+          <div>
+            <h2>My Expertise</h2>
+          </div>
+          <div className='expertiseCon'>
+            <div className="expertises">
+              <h2>Html</h2>
+              <h2 style={{color: "rgba(21,3,3,0.3)"}}>Css</h2>
+              <h2 style={{color: "rgba(21,3,3,0.3)"}}>Javascript</h2>
+            </div>
+            <div>
+              <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>
+              <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>
+            </div>
+          </div>
+        </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@
 body {
     font-family: "Chivo",sans-serif;
     box-sizing: border-box;
-    
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -15,7 +15,6 @@ a {
     background-color: #11ff90;
     height: 100vh;
     width: 100vw;
-    verflow: hidden;
     
 }
 
@@ -107,7 +106,7 @@ a {
 }
 .aboutDiv {
     background : url("https://preview.colorlib.com/theme/jackco/assets/img/gallery/section-bg.jpg");
-    width : 100vw;
+    width : 100%;
     height : 900px;
     overflow: hidden;
     background-size: cover !important;
@@ -210,6 +209,57 @@ a {
         width: 100%;
     } 
 }
+.expertise {
+    width: 100vw;
+    height: 750px;
+    padding-top: 100px ;
+}
+.expertise :nth-child(1) > h2 {
+   text-align: center;
+   font-family: "Shippori Mincho",serif;
+   font-size: 40px;
+   display: block;
+   font-weight: 400;
+   line-height: 1.3;
+   margin-bottom: 12px;
+   
+}
+.expertiseCon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    margin: 0 65px;
+}
+.expertises {
+    width: 516px;
+    height: 310px;
+    background: #01FF56;
+    padding: 60px 65px 20px 65px;
+
+}
+.expertises > h2 {
+    display: block;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 37px;
+    padding-bottom: 30px;
+    color: #000;
+    font-family: "Shippori Mincho",serif;
+}
+.expertiseCon > div:nth-child(2) {
+    width: 370px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #656565;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
 @media only screen and (max-width: 992px) {
     #menu {
         padding: 0px 0px;
@@ -304,9 +354,9 @@ a {
         padding-top: 50px;
     }
     .aboutBox {
-        height: 980px;
+        height: 800px;
 
-        padding: 0px 80px;
+        padding: 0px 100px;
         
     }
     .aboutContent :nth-child(2) > h2 { 
@@ -316,7 +366,7 @@ a {
     }
     .aboutContent {
         text-align: center;
-        padding: 20px 50px;
+        padding: 20px 0px;
         border-bottom: 1px solid gray;
         margin-bottom: 50px;
         margin: 0 0px 50px 0px;
@@ -336,4 +386,26 @@ a {
         text-align: center;
         margin: 12px 0px;
     }
+    .expertiseCon {
+        display: block;
+        margin: 50px 10px;
+    }
+    .expertises {
+        width: 85%;
+        height: 290px;
+        background: #01FF56;
+        padding: 50px 15px 20px 15px;
+        margin: 0 auto;  
+    }
+    
+    .expertiseCon > div:nth-child(2) {
+        width: 85%;
+        height: 600px;
+        display: block;
+        margin: 50px auto;   
+    }
+    .expertiseCon > div:nth-child(2) > p {
+        padding-bottom: 20px;
+    }
+    
 }
