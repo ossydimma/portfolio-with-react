@@ -214,7 +214,7 @@ a {
     height: 750px;
     padding-top: 100px ;
 }
-.expertise :nth-child(1) > h2 {
+.expertise :nth-child(1) > h1 {
    text-align: center;
    font-family: "Shippori Mincho",serif;
    font-size: 40px;
@@ -259,6 +259,84 @@ a {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+}
+.experienceTitle {
+    font-family: "Shippori Mincho",serif;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 110px;
+    margin-bottom: 37px;
+    color: #000;
+    font-size: 60px;
+}
+.experience {
+    width: 58%;
+    margin: 30px auto;
+    border-top: .8px solid rgb(161, 161, 161);
+    color: #150303
+}
+.experience > div > h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #150303 !important
+}
+.experience_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.outLink {
+    font-size: 20px;
+    font-weight: 500;
+    color: #150303, 
+}
+.outLink:hover {
+    color: #01FF56;
+}
+.experiences div:nth-child(5) {
+    border-bottom: .8px solid rgb(161, 161, 161);
+    padding-bottom: 30px;
+    margin-bottom: 120px;
+}
+.visit {
+    height: 100%;
+    width: 100%;
+    background-color: #01FF56;
+    padding-top: 100px;
+    
+}
+.visit-con {
+    display: flex;
+    gap: 10px;
+}
+.visit-img {
+    width: 771px;
+    height: 600px;
+    background: url('https://preview.colorlib.com/theme/jackco/assets/img/gallery/visit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }
+
+.visit-con  div:nth-child(2) p {
+    font-family: "Chivo",sans-serif;
+    color: #150303;
+    font-size: 40px;
+    font-weight: 300;
+ }
+
+ 
+.visit-con div:nth-child(2) {
+    width: 500px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 25px;
 }
 @media only screen and (max-width: 992px) {
     #menu {
@@ -406,6 +484,21 @@ a {
     }
     .expertiseCon > div:nth-child(2) > p {
         padding-bottom: 20px;
+    }
+    .experienceTitle {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .experience {
+        width: 90%;
+        margin: 30px 20px;
+        font-size: 14px;
+    }
+    .experience > div > h2 {
+  
+        font-size: 30px;
+        line-height: 1.5;
+
     }
     
 }
