@@ -302,11 +302,16 @@ a {
     padding-bottom: 30px;
     margin-bottom: 120px;
 }
+.edu {
+    border-bottom: .8px solid rgb(161, 161, 161);
+    padding-bottom: 30px;
+}
 .visit {
     height: 100%;
     width: 100%;
     background-color: #01FF56;
     padding-top: 100px;
+    margin-bottom: 120px;
     
 }
 .visit-con {
