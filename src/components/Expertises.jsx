@@ -34,7 +34,7 @@ const Expertises = () => {
                 </div>
                 <div className='experience_flex'>
                     <p>March 2020 - Present</p>
-                    <p>at<a href="/" className='outLink'> Colorlib  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p>at<a href="/" className='outLink'> Colorlib  <i className="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
                 <div>
                     <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>
@@ -47,7 +47,7 @@ const Expertises = () => {
                 </div>
                 <div className='experience_flex'>
                     <p>March 2020 - Present</p>
-                    <p>at<a href="/" className='outLink'> Colorlib  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p>at<a href="/" className='outLink'> Colorlib  <i className="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
                 <div>
                     <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>
@@ -60,7 +60,7 @@ const Expertises = () => {
                 </div>
                 <div className='experience_flex'>
                     <p>March 2020 - Present</p>
-                    <p>at<a href="/" className='outLink'> Colorlib  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p>at<a href="/" className='outLink'> Colorlib  <i className="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
                 <div>
                     <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>
@@ -73,7 +73,7 @@ const Expertises = () => {
                 </div>
                 <div className='experience_flex'>
                     <p>March 2020 - Present</p>
-                    <p>at<a href="/" className='outLink'> Colorlib  <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p>at<a href="/" className='outLink'> Colorlib  <i className="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
                 <div>
                     <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate.</p>

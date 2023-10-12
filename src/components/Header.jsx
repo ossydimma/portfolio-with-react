@@ -1,14 +1,14 @@
-import React from "react"
-import  { useState } from 'react'
+import  { useState, useEffect } from 'react'
 
 const Header = () => {
     const [drop, setDrop] = useState('60px')
     const [toggle, setToggle] = useState(false)
     
     
+    
     function toggleDown() {
         setDrop('250px')
-        setToggle(!toggle)
+        setToggle(true)
         if (drop === "250px") {
             setDrop('60px')
             setToggle(false)
@@ -57,8 +57,8 @@ const Header = () => {
                 <p>Hi, I am Dwater, focusing on creating emotional experiences.</p>
             </div>
         </div>
-        <div id='hire' >
-            <a href="/" id="hireBtn">HIRE ME</a>
+        <div className='hire' >
+            <a href="/" className="hireBtn">HIRE ME</a>
         </div>
     </div>
   )
