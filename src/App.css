@@ -353,6 +353,7 @@ li {
 .imgLink {
     height: 312px;
     width: 336px;
+    isplay: none;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 5px;
@@ -360,7 +361,6 @@ li {
     margin: 0 auto;
 }
 .imgLink > a {
-    display: none;
     position: absolute;
     top: 150px;
     font-size: 30px;

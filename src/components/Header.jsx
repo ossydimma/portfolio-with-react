@@ -53,7 +53,7 @@ const Header = () => {
         </div>
         <div id="header__body">
             <div className='container'>
-                <h1>web Developer</h1>
+                <h1>web Engineer</h1>
                 <p>Hi, I am Dwater, focusing on creating emotional experiences.</p>
             </div>
         </div>

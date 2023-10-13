@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 
 const Education = () => {
     const [show, setShow] = useState(false)
-    function displayLink() {
-        document.querySelector('.imgLink').style.display = 'block'
+    function displayLink(e) {
+     e.targert.setShow(true)
     }
   return (
     <div>
@@ -43,37 +43,37 @@ const Education = () => {
 
                 <div className="post">
                     <img onMouseOver={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg" alt="post" />
-                   <div className="imgLink 1">
+                   {show && <div className="imgLink 1">
                         <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
-                    </div> 
+                    </div> }
                 </div>
 
                 <div className="post" >
                     <img onMouseEnter={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery2.jpg" alt="post" />
-                    <div className="imgLink 2">
-                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
-                    </div>    
+                    {show && <div className="imgLink 2">
+                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery2.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div> }    
                 </div>
 
                 <div className="post">
                     <img onMouseEnter={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery3.jpg" alt="post" />
-                    <div className="imgLink 3">
-                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
-                    </div>  
+                    {show && <div className="imgLink 3">
+                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery3.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div> }  
                 </div>
 
                 <div className="post">
                     <img onMouseEnter={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery4.jpg" alt="post" />
-                    <div className="imgLink 4">
-                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
-                    </div>  
+                    {show && <div className="imgLink 4">
+                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery4.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div> }
                 </div>
 
                 <div className="post" >
-                    <img onMouseEnter={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery5.jpg" alt="post" />
-                    <div className="imgLink 5">
-                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery1.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
-                    </div> 
+                    <img onMouseEnter={displayLink} src="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery2.jpg" alt="post" />
+                    {show && <div className="imgLink 5">
+                        <a href="https://preview.colorlib.com/theme/jackco/assets/img/gallery/gallery2.jpg"><i className="fa-solid fa-magnifying-glass-plus"></i></a>
+                    </div> } 
                 </div>
             </div>
 
