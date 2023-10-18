@@ -2,9 +2,15 @@ import  { useState, useEffect } from 'react'
 
 const Header = () => {
     const [drop, setDrop] = useState('60px')
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState(window.innerWidth > 992 ? true : false)
+    const [IsShow, setIsShow] = useState()
     
-    
+    useEffect(()=> {
+        window.addEventListener('resize', ()=> {
+            window.innerWidth > 992 ?  setToggle(true):  setToggle(false)
+            setDrop('60px')
+        })
+    },[])
     
     function toggleDown() {
         setDrop('250px')
@@ -14,12 +20,12 @@ const Header = () => {
             setToggle(false)
         }
     }
-    const myStyles = {
-        background : 'url("https://preview.colorlib.com/theme/jackco/assets/img/gallery/section-bg.jpg")',
-        width : '100vw',
-        height : '100vh',
-        overflow: 'hidden',
-    }
+    // const myStyles = {
+    //     background : 'url("https://preview.colorlib.com/theme/jackco/assets/img/gallery/section-bg.jpg")',
+    //     width : '100vw',
+    //     height : '100vh',
+    //     overflow: 'hidden',
+    // }
    
   return (
     <div  className="head">

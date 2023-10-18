@@ -353,12 +353,15 @@ li {
 .imgLink {
     height: 312px;
     width: 336px;
-    isplay: none;
+    opacity: 0;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     bottom: 5px;
     text-align: center;
     margin: 0 auto;
+}
+.imgLink:hover {
+    opacity: 1;
 }
 .imgLink > a {
     position: absolute;

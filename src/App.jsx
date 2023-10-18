@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Expertises from './components/Expertises'
 import Education from './components/Education'
 import Footer from './components/Footer'
+import Insta from './components/Insta'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <About/>
         <Expertises/>
         <Education/>
+        <Insta/>
         <Footer/>
     </>
   )
