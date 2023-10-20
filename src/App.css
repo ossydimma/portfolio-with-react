@@ -15,18 +15,22 @@ li {
     list-style: none;
 }
 .head {
-    background-color: #11ff90;
-    height: 100vh;
+    background-color: #01FF56;
+    height: 800px;
     width: 100vw;
     
 }
 
 #menu {
+    width: 100%;
+    background-color: #01FF56;
+    position: fixed;
     padding: 3px 30px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid #575555;
+    margin-bottom: 50px;
 }
 
 .navi {
@@ -75,6 +79,7 @@ li {
     justify-content: center;
     font-size: 30px;
     color: #fff;
+    padding-top: 100px;
 }
 
 #header__body  h1 {
@@ -347,16 +352,17 @@ li {
     margin-bottom: 0;
 }
 .post > img {
-    height: 312px;
-    width: 336px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .imgLink {
-    height: 312px;
-    width: 336px;
+    height: 285px;
+    width: 340px;
     opacity: 0;
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 5px;
+    bottom: 65px;
     text-align: center;
     margin: 0 auto;
 }
@@ -364,8 +370,8 @@ li {
     opacity: 1;
 }
 .imgLink > a {
-    position: absolute;
-    top: 150px;
+    position: relative;
+    top: 140px;  
     font-size: 30px;
     color: #fff;
 }
@@ -508,6 +514,9 @@ li {
 }
   
 @media only screen and (max-width: 992px) {
+    .head {
+        height: 700px;
+    }
     #menu {
         padding: 0px 0px;
         display: flex;
@@ -546,14 +555,13 @@ li {
         
     }
     .navi {
-        dsplay: none;
         flex-direction: column;
         padding-top: 10px;
         transition: all .3s ease-out ;
     }
     .navi > a {
         font-size: 15px;
-        border-right: 1px solid  #575555;
+        border-right: none;
         padding: 8px 10px;
         color: #fff;
         width: 90%;
@@ -572,7 +580,8 @@ li {
         box-shadow: 20px 1px #fff;
     }
     #header__body {
-        font-size: 20px
+        font-size: 20px;
+        padding-top: 155px;
     }
     #header__body  h1 {
         margin-top: 130px;
@@ -667,6 +676,10 @@ li {
         font-size: 30px;
         line-height: 1.5;
     }
+    .imgLink {
+        height: 294px;
+        width: 348px;
+    }
     .footer {padding-left: 50px; padding-right: 10px;}
     
     .footer-con > div:nth-child(1) {
@@ -683,7 +696,7 @@ li {
         display: flex;
         gap: 150px;
         flex-direction: column;
+        justify-content: center;
     }
-    .flexLeft {width: 70%;}
     
 }
