@@ -1,8 +1,12 @@
-import React from 'react'
+import PagesHeader from "../components/PagesHeader"
+import FeedbackMsg from "../components/feedbackMsg"
 
 const Contacts = () => {
   return (
-    <div>Contacts</div>
+    <>
+      <PagesHeader name="Contact" />
+      <FeedbackMsg />
+    </>
   )
 }
 
