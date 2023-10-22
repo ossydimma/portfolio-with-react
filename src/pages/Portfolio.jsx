@@ -1,8 +1,10 @@
-import React from 'react'
+import PagesHeader from "../components/PagesHeader"
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <>
+      <PagesHeader name='Portfolio' />
+    </>
   )
 }
 

@@ -20,6 +20,19 @@ li {
     width: 100vw;
     
 }
+.page-header {
+    background-color: #01FF56;
+    height: 400px;
+    width: 100vw;
+}
+.page-header > h1 {
+    color: #000;
+    text-align: center;
+    padding-top: 10rem;
+    font-weight: 1000;
+    font-size: 50px;
+    text-transform:uppercase;
+}
 
 #menu {
     width: 100%;
