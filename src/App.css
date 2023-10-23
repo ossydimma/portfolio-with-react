@@ -527,6 +527,78 @@ li {
     justify-content: center;
     letter-spacing: 1px;
 }
+.feedBackMsgCon {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7rem;
+}
+.feedBackMsg {
+    display: flex;
+    flex-direction: column;
+}
+.feedBackMsg >h2 {
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+.feedBackMsg > textarea {
+    border: none;
+    border: 1px solid #303030;
+    width: 678px;
+    padding: 1rem 0 10rem 0.8rem;
+    margin-top: 2rem;
+}
+.feedBack-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.feedBack-input > input {
+    padding: 1rem 0.8rem;
+    margin-right: 2rem;
+    width: 300px;
+    color: #303030;
+}
+.feedBack-input2 > input {
+    padding: 1rem 0.8rem;
+    margin-right: 2rem;
+    text-align: left;
+    width: 660px;
+    color: #303030;
+}
+.feedBack-Btn > button {
+    padding:1.5rem 2.5rem;
+    font-size: 18px;
+    color: #01FF56;
+    margin-top: 2rem;
+    background: transparent;
+    border: none;
+    border: 1px solid #01FF56;
+    cursor: pointer;
+}
+.feedBack-Btn > button:hover {
+    background: #01FF56;
+    color: #fff;
+}
+.feedBackDetails {
+    margin-top: 5rem;
+    color: #303030;
+}
+.iconFlex {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.iconFlex > i {
+    font-size: 30px;
+    background-color: transparent;
+}
+.iconFlex > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
   
 @media only screen and (max-width: 992px) {
     .head {
@@ -713,5 +785,25 @@ li {
         flex-direction: column;
         justify-content: center;
     }
-    
+    .feedBackMsgCon {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 1rem 7rem 3rem;
+    }
+    .feedBackMsg > textarea {
+        width: 500px;
+        padding: 1rem 0 10rem 0.8rem;
+        margin-top: 1rem;
+    }
+    .feedBack-input > input {
+       
+        padding: 1rem 0.8rem;
+        margin-right: 3px;
+        width: 217.8px;
+        color: #303030;
+    }
+    .feedBack-input2 > input {
+        width: 470px;
+    }
 }

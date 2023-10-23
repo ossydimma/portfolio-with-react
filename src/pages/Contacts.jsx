@@ -1,3 +1,4 @@
+import Footer from "../components/Footer"
 import PagesHeader from "../components/PagesHeader"
 import FeedbackMsg from "../components/feedbackMsg"
 
@@ -6,6 +7,7 @@ const Contacts = () => {
     <>
       <PagesHeader name="Contact" />
       <FeedbackMsg />
+      <Footer />
     </>
   )
 }
