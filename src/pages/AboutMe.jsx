@@ -7,7 +7,7 @@ import PagesHeader from '../components/PagesHeader';
 const AboutMe = () => {
   return (
     <>
-       <PagesHeader name='About' />
+      <PagesHeader name='About' />
       <About/>
       <Expertises/>
       <Education/>

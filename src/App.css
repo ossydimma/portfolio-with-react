@@ -36,7 +36,7 @@ li {
 }
 
 #menu {
-    width: 100%;
+    width: 100vw;
     background-color: #01FF56;
     position: fixed;
     padding: 3px 30px;
@@ -82,9 +82,10 @@ li {
     height: 70vh;
     border-radius: 50%;
     background: green;
-    margin-top: 70px;
+    margin-top: 0px;
     padding-left: 120px;
     box-shadow: 50px 1px #fff;
+   
 }
 
 #header__body {
@@ -94,10 +95,10 @@ li {
     justify-content: center;
     font-size: 30px;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
-#header__body  h1 {
+.container > h1  {
     margin-top: 200px;
     text-shadow: 3px 1px black;
 }
@@ -278,6 +279,7 @@ li {
     font-weight: 400;
     line-height: 1.5;
 }
+/* hereee */
 .experienceTitle {
     font-family: "Shippori Mincho",serif;
     font-weight: 500;
@@ -326,10 +328,10 @@ li {
 }
 .visit {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: #01FF56;
     padding-top: 100px;
-    margin-bottom: 12npm0px;
+    margin-bottom: 12px;
     
 }
 .visit-con {
@@ -522,7 +524,8 @@ li {
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
-}.footerEnd {
+}
+.footerEnd {
     display: flex;
     justify-content: center;
     letter-spacing: 1px;
@@ -628,6 +631,7 @@ li {
     #bar {
         display: flex;
         justify-content: right;
+        margin-right: 20px;
         
     }
     #bar > button {
@@ -763,6 +767,31 @@ li {
         font-size: 30px;
         line-height: 1.5;
     }
+    .visit {
+        height: 850px;
+        width: 100vw;
+        padding-top: 0px;
+        margin-bottom: 12px;
+    }
+    .visit-img {
+        width: 100%;
+    }
+    .visit-con  div:nth-child(2) {
+        margin: 50px auto;
+        width: 85%;
+    }
+    .visit-con  div:nth-child(2) p {
+        font-family: "Chivo",sans-serif;
+        color: #150303;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 35px;
+     }
+    .visit-con {
+        display: block;
+        flex-direction: column;
+        gap: 10px;
+    }
     .imgLink {
         height: 294px;
         width: 348px;
@@ -770,7 +799,7 @@ li {
     .footer {padding-left: 50px; padding-right: 10px;}
     
     .footer-con > div:nth-child(1) {
-        width: 80%;
+        width: 75%;
         margin-left: 0;
     }
     .footer-con > div > h2 {
@@ -785,6 +814,19 @@ li {
         flex-direction: column;
         justify-content: center;
     }
+    .flexLeft  {
+        width: 85%;
+        position: relative;
+    }   
+    .input-con > div > input, textarea {
+        width: 85%;
+        font-size: 15px;
+    }
+    .footerEnd {
+       width: 85%;
+       text-align: center;
+    }
+
     .feedBackMsgCon {
         display: flex;
         flex-direction: column;
@@ -806,4 +848,89 @@ li {
     .feedBack-input2 > input {
         width: 470px;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    #bar {
+        margin-right: 5%;
+        
+    }
+    .container {
+        position: relative;
+        width: 80vw;
+        height:30vh;
+        border-radius: 50%;
+        margin-top: 300px;
+        padding-left:30px;
+        /* padding-right: 10px; */
+        box-shadow: 20px 1px #fff;
+        margin-right: 30px;
+        padding-top: 0;
+    }
+    #header__body {
+        padding-top: 0px;
+        font-size: 0px;
+        
+    }
+    .container > h1 {
+        margin-top: 60px;
+        text-shadow: 3px 1px black;
+        font-size: 25px;
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+        position: absolute;
+        bottom: 100px;
+    }
+   .container > p {
+        font-size: 12px;
+        font-weight: 400;
+        position: absolute;
+        bottom: 60px;
+    }
+    .aboutBox {
+        width: 45%;
+        height: 780px;
+        background: #fff;
+        margin: 0 auto;
+        padding: 30px 70px;  
+    }
+    .aboutContent :nth-child(2) > h2 {
+        font-family: "Shippori Mincho",serif;
+        font-size: 18px;
+        display: block;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+    .aboutContent :nth-child(3) {
+        width: 180px;
+        height: 60px;
+        cursor: pointer;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #01FF56;
+     }
+     .skill_text {
+        text-align: left;
+        margin: 0 auto;
+        font-size: 14px; 
+    }
+    .expertiseCon > div:nth-child(2) {
+       
+        margin-bottom: 50px;
+    }
+    .experienceTitle {
+    font-family: "Shippori Mincho",serif;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 30px;
+    margin-top: 250px;
+    color: #000;
+    font-size: 60px;
+}
+
 }
