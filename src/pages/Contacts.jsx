@@ -1,12 +1,12 @@
 import Footer from "../components/Footer"
-import PagesHeader from "../components/PagesHeader"
-import FeedbackMsg from "../components/feedbackMsg"
+import PagesHeader from "../components/PagesHeader";
+import FeedBack from "../components/FeedBack";
 
 const Contacts = () => {
   return (
     <>
       <PagesHeader name="Contact" />
-      <FeedbackMsg />
+      <FeedBack />
       <Footer />
     </>
   )
