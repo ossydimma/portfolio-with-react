@@ -4,7 +4,7 @@
     
 }
 body {
-    font-family: "Chivo",sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -16,8 +16,9 @@ li {
 }
 .head {
     background-color: #01FF56;
+    /* background: rgb(66, 128, 0); */
     height: 800px;
-    width: 100vw;
+    width: 100%;
     
 }
 .page-header {
@@ -37,7 +38,7 @@ li {
 
 #menu {
     width: 100vw;
-    background-color: #01FF56;
+    background: #fff;
     position: fixed;
     padding: 3px 30px;
     display: flex;
@@ -77,38 +78,43 @@ li {
 #bar {
     display: none;
 }
+#header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 120px;
+    margin: 0 80px;
+}
 .container {
-    width: 70vw;
-    height: 70vh;
-    border-radius: 50%;
-    background: green;
-    margin-top: 0px;
-    padding-left: 120px;
-    box-shadow: 50px 1px #fff;
+    width: 40%;
    
 }
 
-#header__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    color: #fff;
-    padding-top: 200px;
+.header-img {
+    width: 50%;
+    height: 50%;
 }
-
+.header-img img {
+    object-fit: contain;
+    height:500px;
+    width: 500px;
+    border-radius: 40px;
+}
 .container > h1  {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     text-shadow: 3px 1px black;
+    margin-bottom: 15px;
 }
 #header__body  p {
     color: #150303;
     text-shadow: 1px 1px #575555;
+    line-height: 40px;
 }
 .hire {
     text-align: right;
-    margin-right: 50px;
+    margin-right: 100px;
     
 
 }
@@ -603,9 +609,9 @@ li {
     gap: 5px;
 }
   
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1090px) {
     .head {
-        height: 700px;
+        height: 850px;
     }
     #menu {
         padding: 0px 0px;
@@ -668,18 +674,38 @@ li {
         border-radius: 50%;
         margin-top: 70px;
         padding-left: 80px;
-        box-shadow: 20px 1px #fff;
+        /* box-shadow: 20px 1px #fff; */
     }
     #header__body {
         font-size: 20px;
         padding-top: 155px;
+        flex-direction: column;
     }
+    .header-img {
+        width: 75%;
+        height: 75%;
+    }
+    .header-img img {
+        object-fit: contain;
+        height:450px;
+        width: 450px;
+        border-radius: 30px;
+    }
+    .container > h1  {
+        /* margin-top: 200px; */
+        text-shadow: 3px 1px black;
+        margin-bottom: 1px;
+        margin-top: -40px;
+    }
+    .cont
     #header__body  h1 {
         margin-top: 130px;
     }
     #header__body  p{
         font-size: 17px;
         font-weight: 600;
+        line-height: 25px;
+        
     }
     .hireBtn {
         text-align: center;
@@ -692,7 +718,7 @@ li {
     .hire {
         text-align: right;
         margin-right: 50px;
-        margin-top: 45px;
+        margin-top: -350px;
     
     }
     .aboutDiv {
