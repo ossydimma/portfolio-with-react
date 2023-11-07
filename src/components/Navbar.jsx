@@ -2,12 +2,18 @@ import  { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const [drop, setDrop] = useState('60px')
-    const [toggle, setToggle] = useState(window.innerWidth > 992 ? true : false)
+    const [drop, setDrop] = useState('60px' ? true : false)
+    const [toggle, setToggle] = useState ( window.innerWidth > 1090 ? true: false)
     
     useEffect(()=> {
         window.addEventListener('resize', ()=> {
-            window.innerWidth > 992 ?  setToggle(true):  setToggle(false)
+            // window.innerWidth > 1090 ?  setToggle(true):  setToggle(false)
+            // setToggle(true)
+            if (window.innerWidth > 1090) {
+                setToggle(true)
+            } else {
+                setToggle(false)
+            }
             setDrop('60px')
         })
     },[])
@@ -16,8 +22,8 @@ const Navbar = () => {
         setDrop('250px')
         setToggle(true)
         if (drop === "250px") {
-            setDrop('60px')
             setToggle(false)
+            setDrop('60px')
         }
     }
   return (
