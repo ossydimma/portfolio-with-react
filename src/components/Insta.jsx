@@ -6,9 +6,11 @@ import 'swiper/css';
 
 const Insta = () => { 
     // got some issues here
-    const [slidePerView, setSlidesPreview] = useState(4); 
+    const [slidePerView, setSlidesPreview] = useState(window.innerWidth < 992  ? 2 : 4); 
+    
     useEffect(()=> {
         function handleResize() {
+
                 window.innerWidth < 992  ? setSlidesPreview(2) : setSlidesPreview(4);   
         }
         window.addEventListener('resize', handleResize)

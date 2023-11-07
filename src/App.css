@@ -15,7 +15,7 @@ li {
 }
 
 .page-header {
-  background-color: #01ff56;
+  background-color: #428000;
   height: 400px;
   width: 100vw;
 }
@@ -70,7 +70,7 @@ li {
 }
 .head {
   /* background-color: #01FF56; */
-  background: rgb(66, 128, 0);
+  background: #428000;
   height: 100vh;
   width: 100%;
   /* padding: 0 100px; */
@@ -153,7 +153,7 @@ li {
   margin: 0 50px 50px 50px;
 }
 .aboutContent :nth-child(1) > span {
-  color: #01ff56;
+  color: #428000;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -181,7 +181,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #01ff56;
+  background: #428000;
 }
 .aboutContent :nth-child(3):hover {
   background: #fff;
@@ -210,7 +210,7 @@ li {
   border-radius: 50px;
 }
 .skill__per {
-  background: #01ff56;
+  background: #428000;
   height: 10px;
   border-radius: 50px;
   animation: fillBar 0.7s 1;
@@ -252,7 +252,7 @@ li {
 .expertises {
   width: 516px;
   height: 310px;
-  background: #01ff56;
+  background: #428000;
   padding: 60px 65px 20px 65px;
 }
 .expertises > h2 {
@@ -313,7 +313,7 @@ li {
   color: #150303;
 }
 .outLink:hover {
-  color: #01ff56;
+  color: #428000;
 }
 .experiences div:nth-child(5) {
   border-bottom: 0.8px solid rgb(161, 161, 161);
@@ -327,7 +327,7 @@ li {
 .visit {
   height: 100%;
   width: 100%;
-  background-color: #01ff56;
+  background-color: #428000;
   padding-top: 100px;
   margin-bottom: 12px;
 }
@@ -395,7 +395,7 @@ li {
 .footer {
   height: 100%;
   width: 100%;
-  background: #01ff56;
+  background: #428000;
   padding: 100px 0px 20px 0px;
 }
 .footer-con {
@@ -565,6 +565,8 @@ textarea {
   margin-right: 2rem;
   width: 300px;
   color: #303030;
+  border: none;
+  border: 1px solid #150303;
 }
 .feedBack-input2 > input {
   padding: 1rem 0.8rem;
@@ -572,19 +574,20 @@ textarea {
   text-align: left;
   width: 660px;
   color: #303030;
+  border: 1px solid #150303;
 }
 .feedBack-Btn > button {
   padding: 1.5rem 2.5rem;
   font-size: 18px;
-  color: #01ff56;
+  color: #428000;
   margin-top: 2rem;
   background: transparent;
   border: none;
-  border: 1px solid #01ff56;
+  border: 1px solid #428000;
   cursor: pointer;
 }
 .feedBack-Btn > button:hover {
-  background: #01ff56;
+  background: #428000;
   color: #fff;
 }
 .feedBackDetails {
@@ -724,8 +727,7 @@ textarea {
     padding-top: 50px;
   }
   .aboutBox {
-    height: 830px;
-
+    height: 850px;
     padding: 0px 100px;
   }
   .aboutContent :nth-child(2) > h2 {
@@ -761,7 +763,7 @@ textarea {
   .expertises {
     width: 85%;
     height: 290px;
-    background: #01ff56;
+    background: #428000;
     padding: 50px 15px 20px 15px;
     margin: 0 auto;
   }
@@ -814,8 +816,14 @@ textarea {
     gap: 10px;
   }
   .imgLink {
-    height: 294px;
-    width: 348px;
+    height: 194px;
+    width: 242px;
+  }
+  .imgLink > a {
+    position: relative;
+    top: 100px;
+    font-size: 24px;
+    color: #fff;
   }
 
   .footer-con > div:nth-child(1) {
@@ -870,19 +878,24 @@ textarea {
     width: 80%;
     margin: 0 1rem 7rem 3rem;
   }
+  .feedBackMsg {
+    width: 100%;
+  }
   .feedBackMsg > textarea {
-    width: 500px;
+    width: 100%;
     padding: 1rem 0 10rem 0.8rem;
     margin-top: 1rem;
   }
   .feedBack-input > input {
     padding: 1rem 0.8rem;
-    margin-right: 3px;
-    width: 217.8px;
+    /* margin-right: 3px;
+    margin-bottom: 10px; */
+    margin: 10px 3px 10px 0;
+    width: 95%;
     color: #303030;
   }
   .feedBack-input2 > input {
-    width: 470px;
+    width: 95%;
   }
 }
 
@@ -945,7 +958,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #01ff56;
+    background: #428000;
   }
   .skill_text {
     text-align: left;
@@ -972,5 +985,11 @@ textarea {
     margin-bottom: 12px;
     font-size: 24px;
     padding-bottom: 50px;
+  }
+  .feedBackMsgCon {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 1rem 7rem 1rem;
   }
 }

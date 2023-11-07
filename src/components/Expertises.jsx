@@ -11,8 +11,8 @@ const Expertises = () => {
                 
                 <div className="expertises">
                     <h2>Html</h2>
-                    <h2 style={{ color: "rgba(21,3,3,0.3)" }}>Css</h2>
-                    <h2 style={{ color: "rgba(21,3,3,0.3)" }}>Javascript</h2>
+                    <h2 style={{ color: "rgba(21,3,3,0.8)" }}>Css</h2>
+                    <h2 style={{ color: "rgba(21,3,3,0.8)" }}>Javascript</h2>
                 </div>
             
                 <div>
