@@ -611,7 +611,7 @@ textarea {
   gap: 5px;
 }
 
-@media only screen and (max-width: 1090px) {
+@media (max-width: 1090px) {
   #menu {
     padding: 0px 0px;
     display: flex;
@@ -720,7 +720,7 @@ textarea {
   .hire {
     margin: 0 auto;
     text-align: center;
-    margin-top: -350px;
+    margin-top: -230px;
   }
   .aboutDiv {
     overflow: hidden;
@@ -931,7 +931,7 @@ textarea {
     margin-top: 80px;
   }
   .hire {
-    margin-top: -150px;
+    margin-top: -40px;
   }
   .aboutBox {
     width: 45%;

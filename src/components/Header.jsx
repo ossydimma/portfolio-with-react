@@ -1,11 +1,11 @@
-import Navbar from "./Navbar";
+import myPic from "../images/mypic.jpg"
 
 const Header = () => {
   return (
     <div className="head">
       <div id="header__body">
         <div className="header-img">
-          <img src="/public/mypic.jpg" alt="image" />
+          <img src={myPic} alt="image" />
         </div>
         <div className="container">
           <h1>web Developer</h1>
