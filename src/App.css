@@ -672,6 +672,7 @@ textarea {
     padding-top: 155px;
     flex-direction: column;
     gap: 0px;
+    margin: 0;
   }
   .container {
     width: 70vw;
@@ -687,12 +688,14 @@ textarea {
     height: 100%;
     text-align: center;
     margin-top: 30px;
+    margin-bottom: 10px;
+    
   }
   .header-img img {
     object-fit: contain;
     height: 450px;
-    width: 50%;
-    border-radius: 30px;
+    width: 100%;
+    border-radius: 30%;
   }
   .container > h1 {
     /* margin-top: 200px; */
@@ -899,7 +902,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
   #bar {
     margin-right: 5%;
   }
