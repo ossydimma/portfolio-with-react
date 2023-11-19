@@ -694,8 +694,8 @@ textarea {
   .header-img img {
     object-fit: contain;
     height: 450px;
-    width: 100%;
-    border-radius: 30%;
+    width: 70%;
+    border-radius: 15%;
   }
   .container > h1 {
     /* margin-top: 200px; */
